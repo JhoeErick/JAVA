@@ -14,35 +14,27 @@ static Scanner entrada;
        System.out.println(mensagem);
        return entrada.nextInt();
    }
-   static int dia_da_semana;
+   static int codigo_estado;
+   static int sigla_estado;
    public static void main(String[] args) {
    entradaAbrir();
-   dia_da_semana = LerInt("Digite o numero refernte ao dia da semana! ");
+   codigo_estado = LerInt("Digite a sigla do estado: ");
    entradaFechar();
-   switch (dia_da_semana) {
-    case 1:
-    System.out.println("Domingo");
+   switch (codigo_estado) {
+    case 50:
+    System.out.println("Estado: Mato Grosso do Sul - Sigla: MS - Região: Centro Oeste.");
         break;
-    case 2:
-    System.out.println("Segunda-Feira");
+    case 51:
+    System.out.println("Estado: ato Grosso - Sigla: MT - Região: Centro Oeste.");
        break;
-    case 3:
-    System.out.println("Terça-Feira");
+    case 52:
+    System.out.println("Estado: Goiás - Sigla: GO - Região: Centro Oeste");
        break;
-    case 4:
-    System.out.println("Quarta-Feira");
-       break;
-    case 5:
-    System.out.println("Quinta-Feira");
-       break;
-    case 6:
-    System.out.println("Sexta-Feira");
-       break;
-    case 7:
-    System.out.println("Sabado");
+    case 53:
+    System.out.println("Estado: Distrito Federal - Sigla: DF - Região: Centro Oeste");
        break;
     default:
-    System.out.println("O codigo que colocou não e um dia da semana!");
+    System.out.println("O codigo de estado que colocou não esta Registrado no nosso sistema.");
         break;
    }
 
